@@ -1,0 +1,12 @@
+
+<%- include("header") -%>
+<!-- <% console.log(items) %> -->
+ <!-- <% for (var i =0; i<items.length;  i++){ %>
+  <%  console.log(items[i].title) %>
+ <% } %> -->
+  
+ <% items.forEach(function(item){ %> 
+ <h1> <%= item.title %></h1>
+  <%= item.postbody %>
+
+<% }) %>
